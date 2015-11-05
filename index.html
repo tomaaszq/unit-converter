@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="pl" ng-app="myApp">
+<head>
+	<meta charset="utf-8" />
+	<title>Cwiczenia angular</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Lato:700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="jumbotron vertical-center">
+<div class="container text-center">
+<div class="center-block">Konwertuj jednostki !</div>
+<div ng-controller="AnotherController">
+	<div> {{ toNano(num) }} [nHz] =</div> 
+	<div> {{ toMikro(num) }} [µHz] =</div>
+	<div> {{ toMili(num) }} [mHz] =</div>
+	<div>  <input ng-model="num" type="number" placeholder="wpisz liczbę w [Hz]"></div>
+	<div>  {{ toKilo(num) }} [KHz] =</div>
+	<div>  {{ toMega(num) }} [MHz] =</div>
+	<div> {{ toGiga(num) }} [GHz] =</div> 
+</div>
+
+</div>
+</div>
+
+
+	<script src="js/angular.min.js"></script>
+	<script src="js/second-script-controller.js"></script>
+</body>
+</html>
