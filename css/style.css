@@ -32,3 +32,35 @@ input {
 	background-color: #E9E9E9;
   color: #000;
 }
+footer {
+  background-color: #000;
+  filter:alpha(opacity=60); /* IE */
+  -moz-opacity:0.6; /* Mozilla */
+  opacity: 0.6; /* CSS3 */
+}
+footer .foot{
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  color: #fff;
+  filter:alpha(opacity=none); /* IE */
+  -moz-opacity:none; /* Mozilla */
+  opacity: none; /* CSS3 */
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+  -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    filter:alpha(opacity=1); /* IE */
+  -moz-opacity:1; /* Mozilla */
+  opacity: 1; /* CSS3 */
+}
+footer a:hover {
+  color: #FFBF00;
+  text-decoration: none;
+}
